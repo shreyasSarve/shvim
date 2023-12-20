@@ -19,7 +19,6 @@ local opts = {
 		lazy = true,
 	},
 	install = {
-		colorscheme = { "moonfly" },
 	},
 	rtp ={
 	disabled_plugins = {
@@ -34,9 +33,13 @@ local opts = {
 	}
 },
 	change_detection = {
-		notify = true,
+		notify = false,
 	}
 }
 
-require("lazy").setup('plugins',opts)
+require("lazy").setup({
+  { import = 'plugins' },
+  { import = 'plugins.lsp' }
+},
+opts)
 require("config.theme")

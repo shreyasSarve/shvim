@@ -36,13 +36,16 @@ return {
 	"nvim-telescope/telescope.nvim",
 	tag = "0.1.3",
 	lazy = false,
-	dependencies = { "nvim-lua/plenary.nvim" },
+	dependencies = {
+    "nvim-lua/plenary.nvim" ,
+    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }
+  },
 	config = config,
 	keys = {
-		mapvimkey("<leader>fk", "Telescope keymaps", "Show Keymaps"),
-		mapvimkey("<leader>fh", "Telescope help_tags", "Show Help Tags"),
-		mapvimkey("<C-p>", "Telescope find_files", "Find Files"),
-		mapvimkey("<leader>fg", "Telescope live_grep", "Live Grep"),
-		mapvimkey("<leader>fb", "Telescope buffers", "Find Buffers"),
+		-- mapvimkey("<leader>fk", "Telescope keymaps", "Show Keymaps"),
+		-- mapvimkey("<leader>fh", "Telescope help_tags", "Show Help Tags"),
+		-- mapvimkey("<C-p>", "Telescope find_files", "Find Files"),
+		-- mapvimkey("<leader>fg", "Telescope live_grep", "Live Grep"),
+		-- mapvimkey("<leader>fb", "Telescope buffers", "Find Buffers"),
 	},
 }
