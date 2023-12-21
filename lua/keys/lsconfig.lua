@@ -46,5 +46,6 @@ insert(M,"n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp i
 return {
   keys = M,
   desc = desc,
+  load = false,
 }
 

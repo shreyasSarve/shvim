@@ -1,4 +1,4 @@
-local desc = "Directory Navigations"
+local desc = "Directory Navigations using NvimTree"
 local insert = require("util.keymapper").insert
 
 local opts = { noremap = true , silent = true }

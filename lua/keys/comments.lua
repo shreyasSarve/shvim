@@ -1,4 +1,4 @@
-local desc = ""
+local desc = "Comments: Keymaps for commenting and uncommenting lines or selected text"
 local insert = require("util.keymapper").insert
 
 local M = {}

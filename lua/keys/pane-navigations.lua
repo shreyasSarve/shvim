@@ -1,4 +1,4 @@
-local desc = ""
+local desc = "Pane Navigation: Keymaps for navigating between panes/windows"
 local insert = require("util.keymapper").insert
 
 local M = {}

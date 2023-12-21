@@ -1,10 +1,11 @@
-local desc = ""
+local desc = "Switching Between Buffers"
 local insert = require("util.keymapper").insert
 
 local M = {}
+local opts = { noremap = true ,  silent = true }
 
-insert(M, 'n' ,  '<C-n>' ,  ':bnext<CR>',  { silent = true , noremap = false } )
-insert(M, 'n' ,  '<C-m>' ,  ':bpre<CR>',  { silent = true , noremap = false } )
+insert(M, 'n' ,  '<C-n>' ,  ':TablineBufferNext<CR>',opts )
+insert(M, 'n' ,  '<C-m>' ,  ':TablineBufferPrevious<CR>',opts)
 
 return {
   keys = M,

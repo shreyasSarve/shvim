@@ -1,4 +1,4 @@
-local desc = "Editing"
+local desc = "Basic editing block / lines in file"
 local insert = require("util.keymapper").insert
 
 local M = {}

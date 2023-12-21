@@ -1,4 +1,4 @@
-local desc = ""
+local desc = "Indenting blocks / line in file"
 local insert = require("util.keymapper").insert
 local M = {}
 

@@ -1,4 +1,3 @@
-
 local function print_tbl(tbl,indent)
    indent = indent or 0
     local spaces = string.rep("  ", indent) -- Two spaces for each level of indentation
@@ -32,29 +31,6 @@ local function print_tbl(tbl,indent)
     print(spaces .. "}")
 end
 
-local set_keymaps = function(mappings)
-  for _, map in ipairs(mappings) do
-    vim.api.nvim_set_keymap(map.mode, map.key, map.cmd, map.opts)
-  end
-end
-
-local function mapper(mode, key, cmd, opts)
-  local mapping = {
-    mode = mode,
-    key = key,
-    cmd = cmd,
-    opts = opts or { noremap = true, silent = true }
-  }
-  return mapping
-end
-
-local insert = function (M,mode,key,cmd,opts)
-  table.insert(M,mapper(mode,key,cmd,opts))
-end
-
 return {
-  insert = insert,
-  set_keymaps = set_keymaps,
-  mapper = mapper,
-  print_table = print_tbl,
+  tbl_print = print_tbl
 }

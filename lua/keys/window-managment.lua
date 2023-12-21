@@ -1,4 +1,4 @@
-local desc = ""
+local desc = "Window Management: Keymaps for managing windows and splits"
 local insert = require("util.keymapper").insert
 
 local M = {}
