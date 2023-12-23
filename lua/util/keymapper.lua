@@ -33,8 +33,9 @@ local function print_tbl(tbl,indent)
 end
 
 local set_keymaps = function(mappings)
+  local keymap=vim.api.nvim_set_keymap
   for _, map in ipairs(mappings) do
-    vim.api.nvim_set_keymap(map.mode, map.key, map.cmd, map.opts)
+    keymap(map.mode, map.key, map.cmd, map.opts)
   end
 end
 

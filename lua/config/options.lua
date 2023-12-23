@@ -37,8 +37,10 @@ opt.mouse:append('a')
 opt.clipboard:append("unnamedplus")
 opt.modifiable = true
 opt.encoding = "UTF-8"
+opt.fillchars:append("eob", " ") -- for not showing ~ when there is no lin
 
 --
 opt.background = "dark"
 opt.showtabline = 2
 vim.o.showmode = false
+

@@ -1,4 +1,4 @@
 return {
-  "Biscuit-Colorscheme/nvim",
-  lazy = false
+  "nyoom-engineering/oxocarbon.nvim",
+  lazy = false,
 }
